@@ -8,9 +8,20 @@ const Navbar = () => {
     <div className='nav-center'>
       <div className='nav-header'>
         <img src={logo} alt="logo"/>
-        <button className='nav-to'></button>
+        <button className='nav-toggle'>
+          <FaBars/>
+        </button>
       </div>
-      <div className='links-container show-container'></div>
+      <div className='links-container show-container'>
+        <ul className='link'>
+          <li>
+            <a href='#'>home</a>
+            <a href='#'>about</a>
+            <a href='#'>contact</a>
+            <a href='#'>product</a>
+          </li>
+        </ul>
+      </div>
       <ul className='social-icon'></ul>
     </div>
   </nav>
